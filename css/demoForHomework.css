@@ -176,9 +176,15 @@ html {
 }
 
 /* innerContainer边距设置 */
-.innerContainer{
-    margin: 30px 150px;
-}
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px; /* 添加适当的内边距 */
+  }  
+  
 /* 热门景点链接样式 */
 .hotAttractions{
     width: 300px;
@@ -189,7 +195,7 @@ html {
     color: #585e71;
 }
 .hotText{
-    line-height: 30px;
+    line-height: 122px;
 }
 .hotText td{
     border-bottom: 2px solid #F3F3F3;
@@ -228,11 +234,19 @@ html {
 }
 
 /* 首页 热门古迹+关于定兴 */
-.home{
+/* .home{
     display: flex;
     justify-content: space-between;
     width: 1100px;
-}
+} */
+.home {
+    display: flex;               /* 使用 Flexbox 布局 */
+    justify-content: center;      /* 水平方向居中对齐 */
+    align-items: center;          /* 垂直方向居中对齐 */
+    gap: 80px;                    /* 元素之间的间距为 20px */
+    height: 66vh;                /* 设置容器高度为视口高度 */
+  }
+  
 /* .home .aboutDX{
     width: 500px;
     height: 400px;
